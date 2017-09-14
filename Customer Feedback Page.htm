@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Contact Us</title>
+  <meta name="description" content="HTML5 Template">
+
+</head>
+
+<body>
+<h1> Sam's Autoshop </h1>
+<h2> Contact Us </h2>
+<hr />
+
+<p>On this page you can contact us with any questions you may have. We are always happy to hear
+from our customers so please don't hesitate to ask. You will recieve a response email ASAP.</p>
+
+<form action = "">
+<p>
+<!-- Text boxes for first name, last name, and email address -->
+	<label> First Name:
+	  <input type = "text" firstname = "firstname"
+		size = "15" /> </label>
+	<br />
+	<label>	Last Name:
+	   <input type = "text" lastname = "lastname"
+		size = "15" /> </label>
+	<br />
+	<label> Email: 
+	   <input type = "text" email = "email"
+		size = "30" /> </label>
+</p>
+<!-- The radio buttons for determining question, problem, or order update -->
+<p>
+  Type of message
+</p>
+<p>
+	<label> <input type = "radio" name = "subject"
+	               value = "question" checked = "checked" /> Question
+	</label>
+	<br />
+	<label> <input type = "radio" name = "subject"
+		       value = "problem" /> Problem
+	</label>
+	<br />
+	<label> <input type = "radio" name = "subject"
+		       value = "order status" /> Order Status Update
+	</label>
+</p>
+
+<p>
+ <textarea name = "message" rows = "5" cols = "40">
+	Type message here
+ </textarea>
+</p>
+<p>
+ <input type = "submit" value = "Submit Message" />
+ <input type = "reset" value = "Reset Page" />
+</p>
+</form>
+</body>
+</html>
