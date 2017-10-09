@@ -1,6 +1,52 @@
 /*
 Sam's autoshop stylesheet
 */
+#intro {
+    position:relative;
+    top:25px;
+    left:400px;
+    width:900px;
+    text-align:center;
+    font-size: 200%
+
+}
+
+.link {
+    position:absolute;
+    top:50px;
+    left:10px;
+    width:300px;
+    text-align:center;
+
+}
+
+.link2 {
+   position:absolute;
+    top:90px;
+    left:10px;
+    width:300px;
+    text-align:center;
+
+}
+
+.link3 {
+    position:absolute;
+    top:130px;
+    left:10px;
+    width:300px;
+    text-align:center;
+
+}
+
+.link4 {
+    position:absolute;
+    top:50px;
+    left:-400px;
+    width:300px;
+    text-align:center;
+
+}
+
 
 body {
      background-color: lightblue;
@@ -11,7 +57,13 @@ body {
 h1 {
      background-color: Blue;
      color: White;
+     position:relative;
+     boder-style:solid;
+     text-align:center;
+     
+
 }
+  
 
 table, th, td {
     border: 1px solid black;
