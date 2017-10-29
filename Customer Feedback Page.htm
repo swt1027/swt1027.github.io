@@ -11,7 +11,7 @@
   <meta name="description" content="HTML5 Template">
   <h1> Sam's Autoshop </h1>
 <h2> Contact Us </h2>
-
+<script type = "text/javascript" src = "customerValidation.js"></script>
 </head>
 
 <body id="intro">
@@ -21,19 +21,19 @@
 <p>On this page you can contact us with any questions you may have. We are always happy to hear
 from our customers so please don't hesitate to ask. You will recieve a response email ASAP.</p>
 
-<form action = "">
+<form id = "customerForm" action = "">
 <p>
 <!-- Text boxes for first name, last name, and email address -->
 	<label> First Name:
-	  <input type = "text" firstname = "firstname"
+	  <input type = "text" id = "firstname"  
 		size = "15" /> </label>
 	<br />
 	<label>	Last Name:
-	   <input type = "text" lastname = "lastname"
+	   <input type = "text" id = "lastname"
 		size = "15" /> </label>
 	<br />
 	<label> Email: 
-	   <input type = "text" email = "email"
+	   <input type = "text" id = "email"
 		size = "30" /> </label>
 </p>
 <!-- The radio buttons for determining question, problem, or order update -->
@@ -55,15 +55,19 @@ from our customers so please don't hesitate to ask. You will recieve a response 
 </p>
 
 <p>
- <textarea name = "message" rows = "6" cols = "40">
+ <textarea name = "message" rows = "6" cols = "40" id = "message">
 	Type message here
  </textarea>
 </p>
+
 <p>
  <input type = "submit" value = "Submit Message" />
  <input type = "reset" value = "Reset Page" />
 </p>
 </form>
+
+<script type = "text/javascript src = "customerValidation.js"></script>
+
 <p class="link4">
   <a href = "https://swt1027.github.io/"> Back to Homepage </a>
 </p>
