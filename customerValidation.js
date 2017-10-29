@@ -23,8 +23,8 @@ function validate() {
     if (msg == "") {
         alert ("Please enter a message.");
         return false;
-    } else
-      return true;
+    }
+    
 }
 //register event handlers
 document.getElementById("customerForm").onsubmit = validate;

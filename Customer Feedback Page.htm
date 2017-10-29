@@ -11,7 +11,9 @@
   <meta name="description" content="HTML5 Template">
   <h1> Sam's Autoshop </h1>
 <h2> Contact Us </h2>
-<script type = "text/javascript" src = "customerValidation.js"></script>
+<script type="text/javascript" src = "customerValidation.js">
+</script>
+
 </head>
 
 <body id="intro">
@@ -22,10 +24,11 @@
 from our customers so please don't hesitate to ask. You will recieve a response email ASAP.</p>
 
 <form id = "customerForm" action = "">
+<script src = "customerValidation.js"></script>
 <p>
 <!-- Text boxes for first name, last name, and email address -->
 	<label> First Name:
-	  <input type = "text" id = "firstname"  
+	  <input type = "text" name = "firstname" id = "firstname"  
 		size = "15" /> </label>
 	<br />
 	<label>	Last Name:
@@ -35,6 +38,7 @@ from our customers so please don't hesitate to ask. You will recieve a response 
 	<label> Email: 
 	   <input type = "text" id = "email"
 		size = "30" /> </label>
+<script src = "customerValidation.js"></script>
 </p>
 <!-- The radio buttons for determining question, problem, or order update -->
 <p>
@@ -61,15 +65,17 @@ from our customers so please don't hesitate to ask. You will recieve a response 
 </p>
 
 <p>
- <input type = "submit" value = "Submit Message" />
+ <input type = "submit" name = "Submit"/>
  <input type = "reset" value = "Reset Page" />
+
 </p>
 </form>
-
-<script type = "text/javascript src = "customerValidation.js"></script>
+<script type="text/javascript" src = "customerValidation.js">
+</script>
 
 <p class="link4">
   <a href = "https://swt1027.github.io/"> Back to Homepage </a>
+
 </p>
 </body>
 </html>
