@@ -2,7 +2,7 @@
 //validate user information
 
 function validate() {
-    var fName = document.getElementById("fistname");
+    var fName = document.getElementById("firstname");
     var lName = document.getElementById("lastname");
     var mail = document.getElementById("email");
     var msg = document.getElementById("message");
