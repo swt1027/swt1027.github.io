@@ -2,21 +2,21 @@
 //validate user information
 
 function validate() {
-    var fName = document.getElementById("firstname");
-    var lName = document.getElementById("lastname");
-    var mail = document.getElementById("email");
-    var msg = document.getElementById("message");
+    var fName = document.getElementById("firstname").value;
+    var lName = document.getElementById("lastname").value;
+    var mail = document.getElementById("email").value;
+    var msg = document.getElementById("message").value;
 
     //check if values are empty
-    if (fName.value == "") {
+    if (fName == "" || !isNaN(fName)){
         alert ("Please enter your first name.");
         return false;
     }
-    if (lName.value == "") {
+    if (lName == "" || !isNaN(lName)) {
         alert ("Please enter your last name.");
         return false;
     }
-    if (mail.value == "") {
+    if (mail == "" || !isNaN(mail)) {
         alert ("Please enter your email.");
         return false;
     }
