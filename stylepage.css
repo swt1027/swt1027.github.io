@@ -74,42 +74,6 @@ Sam's autoshop stylesheet
 
 
 
-.link {
-    position:absolute;
-    top:50px;
-    left:10px;
-    width:300px;
-    text-align:center;
-
-}
-
-.link2 {
-   position:absolute;
-    top:90px;
-    left:10px;
-    width:300px;
-    text-align:center;
-
-}
-
-.link3 {
-    position:absolute;
-    top:130px;
-    left:10px;
-    width:300px;
-    text-align:center;
-
-}
-
-.link4 {
-    position:absolute;
-    top:50px;
-    left:-400px;
-    width:300px;
-    text-align:center;
-
-}
-
 
 body {
      background-color: lightblue;
@@ -150,4 +114,48 @@ a:hover {
 /* selected link */
 a:active {
     color: green;
+}
+
+
+/* Slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Caption text */
+.text {
+  color: red;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
