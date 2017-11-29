@@ -17,5 +17,7 @@ function switchLight(lightNumber) {
     allOff();
     var light = LIGHTS[lightNumber];
     light.classList.add("on");
+
+    //call function here
 }
 
