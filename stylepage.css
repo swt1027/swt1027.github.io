@@ -1,161 +1,23 @@
 /*
-Sam's autoshop stylesheet
+Race Stylesheet
 */
-#intro {
-    position:relative;
-    top:25px;
-    left:253px;
-    width:900px;
-    text-align:center;
-    font-size: 200%
-
+.light {
+  height: 120px;
+  width : 120px;
+  border-radius: 50%;
+  opacity : 0.3; /* makes colors less bright by default */
+  margin: 0 auto;
+  display: inline-block;
 }
 
-
-.navbar {
-    overflow: hidden;
-    background-color: blue;
-    font-family: Arial;
-}
-
-.navbar a {
-    float: left;
-    font-size: 32px;
-    color: white;
-    text-align: center;
-    padding: 14px 63px;
-    text-decoration: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 32px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: black;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
-
-
+.stop {background-color: red;}
+.slow {background-color: yellow;}
+.go {background-color: green;}
+.on {opacity: 1;}
 
 body {
-     background-color: lightblue;
-     font-family: Arial, 'Times New Roman'
-     
-}
-
-h1 {
-     background-color: Blue;
-     color: White;
-     position:relative;
-     boder-style:solid;
-     text-align:center;
-     
-
-}
-  
-
-table, th, td {
-    border: 1px solid black;
-}
-
-/* unvisited link */
-a:link {
-    color: blue;
-}
-
-/* visited link */
-a:visited {
-    color: purple;
-}
-
-/* mouse over link */
-a:hover {
-    color: red;
-}
-
-/* selected link */
-a:active {
-    color: green;
-}
-
-
-/* Slideshow */
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 500px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-/* Caption text */
-.text {
-  color: red;
-  font-size: 30px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+  background-color : white;
   text-align: center;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  color :black;
+  font-family: Helvetica;
 }
