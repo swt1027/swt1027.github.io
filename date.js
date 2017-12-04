@@ -18,6 +18,65 @@ function switchLight(lightNumber) {
     var light = LIGHTS[lightNumber];
     light.classList.add("on");
 
-    //call function here
+    if (lightNumber == 0)
+        red();
+
+    if (lightNumber == 2)
+        ready();
+}
+
+var animate, left = 0, imgObj1 = null, imgObj2 = null;
+function ready() {
+    
+
+    imgObj1 = document.getElementById('greencar');
+    imgObj2 = document.getElementById('yellowcar');
+    imgObj1.style.position = 'absoulte';
+    imgObj1.style.top = '0px';
+    imgObj1.style.left = '-563px';
+    imgObj2.style.position = 'absolute';
+    imgObj2.style.top = '100px';
+    imgObj2.style.left = '100px';
+
+    green();
+}
+
+function green() {
+    var greenSpeed = Math.round((Math.random() * 2) + 50);
+    var yellowSpeed = Math.round((Math.random() * 2) + 50);
+    left = parseInt(imgObj1.style.left, 15);
+    left2 = parseInt(imgObj2.style.left, 15);
+
+    if (500 >= left && 500 >= left2) {
+        imgObj1.style.left = left + greenSpeed + 'px';
+        imgObj1.style.visib
+        imgObj2.style.left = left + yellowSpeed + 'px';
+        animate = setTimeout(green, 200);
+    }
+
+    else if (imgObj1.style.left > imgObj2.style.left) {
+        alert("Green Car Wins!");
+    }
+    else if (imgObj2.style.left > imgObj1.style.left) {
+        alert("Yellow Car Wins!")
+    }
+
+
+}
+
+function red() {
+    clearTimeout(animate);
+    reset();
+}
+
+function reset() {
+    imgObj1 = document.getElementById('greencar');
+    imgObj2 = document.getElementById('yellowcar');
+    imgObj1.style.position = 'absoulte';
+    imgObj1.style.top = '0px';
+    imgObj1.style.left = '-563px';
+    imgObj2.style.position = 'absolute';
+    imgObj2.style.top = '100px';
+    imgObj2.style.left = '100px';
 }
 
