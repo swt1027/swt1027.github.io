@@ -2,7 +2,7 @@
 Race Stylesheet
 */
 .light {
-  height: 120px;
+  height: 160px;
   width : 120px;
   border-radius: 50%;
   opacity : 0.3; /* makes colors less bright by default */

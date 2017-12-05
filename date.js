@@ -25,7 +25,7 @@ function switchLight(lightNumber) {
         ready();
 }
 
-var animate, left = 0, imgObj1 = null, imgObj2 = null;
+var animate, left = 0, left2 = 0, imgObj1 = null, imgObj2 = null;
 function ready() {
     
 
@@ -33,7 +33,7 @@ function ready() {
     imgObj2 = document.getElementById('yellowcar');
     imgObj1.style.position = 'absoulte';
     imgObj1.style.top = '0px';
-    imgObj1.style.left = '-563px';
+    imgObj1.style.left = '100px';
     imgObj2.style.position = 'absolute';
     imgObj2.style.top = '100px';
     imgObj2.style.left = '100px';
@@ -44,12 +44,11 @@ function ready() {
 function green() {
     var greenSpeed = Math.round((Math.random() * 2) + 50);
     var yellowSpeed = Math.round((Math.random() * 2) + 50);
-    left = parseInt(imgObj1.style.left, 15);
-    left2 = parseInt(imgObj2.style.left, 15);
+    left = parseInt(imgObj1.style.left, 7);
+    left2 = parseInt(imgObj2.style.left, 7);
 
     if (500 >= left && 500 >= left2) {
         imgObj1.style.left = left + greenSpeed + 'px';
-        imgObj1.style.visib
         imgObj2.style.left = left + yellowSpeed + 'px';
         animate = setTimeout(green, 200);
     }
@@ -58,7 +57,10 @@ function green() {
         alert("Green Car Wins!");
     }
     else if (imgObj2.style.left > imgObj1.style.left) {
-        alert("Yellow Car Wins!")
+        alert("Yellow Car Wins!");
+    }
+    else if (imObj1.style.left == imgObj2.style.left) {
+        alert("Both Cars Tie!");
     }
 
 
@@ -74,7 +76,7 @@ function reset() {
     imgObj2 = document.getElementById('yellowcar');
     imgObj1.style.position = 'absoulte';
     imgObj1.style.top = '0px';
-    imgObj1.style.left = '-563px';
+    imgObj1.style.left = '100px';
     imgObj2.style.position = 'absolute';
     imgObj2.style.top = '100px';
     imgObj2.style.left = '100px';
