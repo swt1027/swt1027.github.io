@@ -38,7 +38,7 @@ function ready() {
     imgObj1.style.left = '0px';
     imgObj2.style.position = 'absolute';
     imgObj2.style.top = '500px';
-    imgObj2.style.left = '0px';
+    imgObj2.style.left = '5px';
 
     green();
 }
@@ -57,7 +57,7 @@ function green() {
         imgObj2.style.left = (left + yellowSpeed) + 'px';
         imgObj2.style.visibility = 'visible';
 
-        animate = setTimeout(function () { green(); }, 150);
+        animate = setTimeout(function () { green(); }, 200);
     }
 
     else if (imgObj1.style.left > imgObj2.style.left) {
@@ -86,7 +86,7 @@ function reset() {
     imgObj1.style.left = '0px';
     imgObj2.style.position = 'absolute';
     imgObj2.style.top = '500px';
-    imgObj2.style.left = '0px';
+    imgObj2.style.left = '5px';
 }
 
 window.onload = function () { init(); };
