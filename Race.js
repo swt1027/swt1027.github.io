@@ -33,12 +33,12 @@ function ready() {
 
     imgObj1 = document.getElementById('greencar');
     imgObj2 = document.getElementById('yellowcar');
-    imgObj1.style.position = 'absoulte';
-    imgObj1.style.top = '0px';
-    imgObj1.style.left = '-100px';
+    imgObj1.style.position = 'absolute';
+    imgObj1.style.top = '100px';
+    imgObj1.style.left = '0px';
     imgObj2.style.position = 'absolute';
-    imgObj2.style.top = '100px';
-    imgObj2.style.left = '-100px';
+    imgObj2.style.top = '250px';
+    imgObj2.style.left = '0px';
 
     green();
 }
@@ -46,18 +46,18 @@ function ready() {
 function green() {
     
 
-    var greenSpeed = Math.round((Math.random() * 2) + 35);
-    var yellowSpeed = Math.round((Math.random() * 2) + 35);
-    left = parseInt(imgObj1.style.left, 7);
-    left2 = parseInt(imgObj2.style.left, 7);
+    var greenSpeed = Math.round((Math.random() * 2) + 75);
+    var yellowSpeed = Math.round((Math.random() * 2) + 75);
+    left = parseInt(imgObj1.style.left, 15);
+    left2 = parseInt(imgObj2.style.left, 15);
 
-    if (900 >= left && 900 >= left2) {
+    if (1300 >= left && 1300 >= left2) {
         imgObj1.style.left = (left + greenSpeed) + 'px';
         imgObj1.style.visibility = 'visible';
         imgObj2.style.left = (left + yellowSpeed) + 'px';
         imgObj2.style.visibility = 'visible';
 
-        animate = setTimeout(function () { green(); }, 300);
+        animate = setTimeout(function () { green(); }, 175);
     }
 
     else if (imgObj1.style.left > imgObj2.style.left) {
@@ -81,12 +81,12 @@ function red() {
 function reset() {
     imgObj1 = document.getElementById('greencar');
     imgObj2 = document.getElementById('yellowcar');
-    imgObj1.style.position = 'absoulte';
-    imgObj1.style.top = '0px';
-    imgObj1.style.left = '-300px';
+    imgObj1.style.position = 'absolute';
+    imgObj1.style.top = '100px';
+    imgObj1.style.left = '0px';
     imgObj2.style.position = 'absolute';
-    imgObj2.style.top = '100px';
-    imgObj2.style.left = '400px';
+    imgObj2.style.top = '250px';
+    imgObj2.style.left = '0px';
 }
 
 window.onload = function () { init(); };
